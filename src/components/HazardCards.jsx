@@ -14,32 +14,27 @@ import { useNavigate } from "react-router-dom";
 const hazards = [
   {
     title: "Floods",
-    image: "/hazards/floods.jpg",
+    image: `${import.meta.env.BASE_URL}hazards/floods.jpg`,
   },
-
   {
     title: "Cyclones",
-    image: "/hazards/cyclones.jpg",
+    image: `${import.meta.env.BASE_URL}hazards/cyclones.jpg`,
   },
-
   {
     title: "Earthquakes",
-    image: "/hazards/earthquakes.jpg",
+    image: `${import.meta.env.BASE_URL}hazards/earthquakes.jpg`,
   },
-
   {
     title: "Landslides",
-    image: "/hazards/landslides.jpg",
+    image: `${import.meta.env.BASE_URL}hazards/landslides.jpg`,
   },
-
   {
     title: "Heatwaves",
-    image: "/hazards/heatwaves.jpg",
+    image: `${import.meta.env.BASE_URL}hazards/heatwaves.jpg`,
   },
-
   {
     title: "Lightning",
-    image: "/hazards/lightning.jpg",
+    image: `${import.meta.env.BASE_URL}hazards/lightning.jpg`,
   },
 ];
 

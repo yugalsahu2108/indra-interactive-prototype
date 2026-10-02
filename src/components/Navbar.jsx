@@ -67,7 +67,7 @@ export default function Navbar() {
         </div> */}
 
         <div className="indra-navbar-logo">
-          <img src="/Indra_logo.jpeg" alt="INDRA" />
+          <img src={`${import.meta.env.BASE_URL}Indra_logo.jpeg`} alt="INDRA" />
         </div>
 
         <div className="indra-navbar-brand-text">
