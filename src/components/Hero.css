@@ -1,0 +1,736 @@
+/* ================================================================
+   INDRA HOME HERO
+================================================================ */
+
+.indra-home-hero {
+
+  position: relative;
+
+  width: 100%;
+
+  height: 465px;
+
+  overflow: hidden;
+
+  background: #020b14;
+
+}
+
+
+/* ================================================================
+   LEFT CONTENT
+================================================================ */
+
+.indra-home-content {
+
+  position: absolute;
+
+  z-index: 100;
+
+  left: 5.2%;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 46%;
+
+  max-width: 680px;
+
+}
+
+
+/* ================================================================
+   BADGE
+================================================================ */
+
+.indra-home-badge {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 7px 13px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid rgba(105, 156, 196, 0.34);
+
+  border-radius: 30px;
+
+  background: rgba(18, 47, 72, 0.63);
+
+  color: #e6eef6;
+
+  font-size: 12px;
+
+  backdrop-filter: blur(10px);
+
+}
+
+
+.indra-home-badge-icon {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+
+/* ================================================================
+   HEADING
+================================================================ */
+
+.indra-home-content h1 {
+
+  margin: 0 0 20px;
+
+  color: #ffffff;
+
+  font-size: clamp(48px, 4.5vw, 68px);
+
+  line-height: 0.98;
+
+  letter-spacing: -3.4px;
+
+  font-weight: 700;
+
+}
+
+
+.indra-home-content h1 span {
+
+  background:
+    linear-gradient(90deg,
+      #79bdff,
+      #2d80f0);
+
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  color: transparent;
+
+}
+
+
+/* ================================================================
+   DESCRIPTION
+================================================================ */
+
+.indra-home-content p {
+
+  max-width: 600px;
+
+  margin: 0 0 25px;
+
+  color: #b4c2d1;
+
+  font-size: 15px;
+
+  line-height: 1.52;
+
+}
+
+
+/* ================================================================
+   BUTTONS
+================================================================ */
+
+.indra-home-buttons {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+}
+
+
+.indra-home-primary {
+
+  height: 52px;
+
+  padding: 0 25px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 14px;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(135deg,
+      #3189ff,
+      #2472ed);
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 14px 34px rgba(33, 116, 244, 0.27);
+
+}
+
+
+.indra-home-secondary {
+
+  height: 52px;
+
+  padding: 0 22px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  border: 1px solid rgba(153, 182, 208, 0.56);
+
+  border-radius: 14px;
+
+  background: rgba(5, 16, 28, 0.35);
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+}
+
+
+/* ================================================================
+   EARTH
+
+   Smaller than the previous version and moved right.
+================================================================ */
+
+.indra-home-earth {
+
+  position: absolute;
+
+  z-index: 10;
+
+  right: -55px;
+
+  top: -30px;
+
+  width: 62vw;
+
+  height: 560px;
+
+  pointer-events: none;
+
+}
+
+
+/* ================================================================
+   THREE.JS SCENE
+================================================================ */
+
+.indra-home-earth .earth-scene {
+
+  position: absolute !important;
+
+  inset: 0 !important;
+
+  width: 100% !important;
+
+  height: 100% !important;
+
+}
+
+
+/* ================================================================
+   LIVE CARD COMMON
+================================================================ */
+
+.indra-live-card {
+
+  position: absolute;
+
+  z-index: 250;
+
+  width: 198px;
+
+  padding: 10px 12px;
+
+  border: 1px solid rgba(134, 179, 211, 0.25);
+
+  border-radius: 13px;
+
+  background: rgba(5, 22, 36, 0.94);
+
+  backdrop-filter: blur(14px);
+
+  -webkit-backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.38);
+
+  color: #ffffff;
+
+  pointer-events: none;
+
+}
+
+
+/* ================================================================
+   LIVE HEADER
+================================================================ */
+
+.indra-live-card-top {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 7px;
+
+}
+
+
+.indra-live-label {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  color: var(--live-color);
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+
+}
+
+
+.indra-live-dot {
+
+  width: 6px;
+
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: var(--live-color);
+
+  box-shadow:
+    0 0 10px var(--live-color);
+
+}
+
+
+.indra-live-time {
+
+  color: rgba(215, 231, 241, 0.42);
+
+  font-size: 8px;
+
+}
+
+
+/* ================================================================
+   MAIN
+================================================================ */
+
+.indra-live-card-main {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+}
+
+
+.indra-live-card-icon {
+
+  width: 35px;
+
+  height: 35px;
+
+  flex: 0 0 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background:
+    color-mix(in srgb,
+      var(--live-color) 18%,
+      transparent);
+
+  font-size: 16px;
+
+}
+
+
+.indra-live-card-text {
+
+  min-width: 0;
+
+}
+
+
+.indra-live-card-text strong {
+
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  line-height: 1.2;
+
+}
+
+
+.indra-live-card-text span {
+
+  display: block;
+
+  margin-top: 3px;
+
+  color: rgba(216, 232, 242, 0.50);
+
+  font-size: 8px;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+}
+
+
+/* ================================================================
+   SOURCE
+================================================================ */
+
+.indra-live-card-source {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  margin-top: 7px;
+
+  padding-top: 6px;
+
+  border-top: 1px solid rgba(127, 165, 190, 0.10);
+
+  color: rgba(182, 205, 220, 0.38);
+
+  font-size: 7px;
+
+}
+
+
+.indra-live-card-source svg {
+
+  color: var(--live-color);
+
+}
+
+
+/* ================================================================
+   EXACT TRACKER POSITIONS
+
+   These are relative to the full browser hero,
+   not the Earth wrapper.
+================================================================ */
+
+
+/* Himalayan region */
+
+.indra-live-landslide {
+
+  top: 19%;
+
+  left: 52%;
+
+}
+
+
+/* Assam / Brahmaputra */
+
+.indra-live-flood {
+
+  top: 22%;
+
+  left: 64%;
+
+}
+
+
+/* Northeast rainfall */
+
+.indra-live-rain {
+
+  top: 48%;
+
+  left: 58%;
+
+}
+
+
+/* ================================================================
+   ACTIVE ALERTS
+================================================================ */
+
+.indra-home-alert {
+
+  position: absolute;
+
+  z-index: 300;
+
+  top: 38px;
+
+  right: 30px;
+
+  width: 177px;
+
+  min-height: 72px;
+
+  padding: 11px 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  border: 1px solid rgba(128, 171, 205, 0.30);
+
+  border-radius: 14px;
+
+  background: rgba(7, 25, 41, 0.92);
+
+  backdrop-filter: blur(15px);
+
+  -webkit-backdrop-filter: blur(15px);
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+}
+
+
+.indra-home-alert-icon {
+
+  width: 37px;
+
+  height: 37px;
+
+  flex: 0 0 37px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: rgba(255, 77, 77, 0.15);
+
+  color: #ff6464;
+
+}
+
+
+.indra-home-alert-text {
+
+  flex: 1;
+
+}
+
+
+.indra-home-alert-text span {
+
+  display: block;
+
+  color: rgba(229, 240, 248, 0.75);
+
+  font-size: 10px;
+
+}
+
+
+.indra-home-alert-text strong {
+
+  display: block;
+
+  margin-top: 1px;
+
+  color: #ff6262;
+
+  font-size: 26px;
+
+  line-height: 1;
+
+}
+
+
+/* ================================================================
+   RESPONSIVE
+================================================================ */
+
+@media (min-width: 1500px) {
+
+  .indra-home-earth {
+
+    right: -40px;
+
+    width: 60vw;
+
+  }
+
+}
+
+
+@media (max-width: 1100px) {
+
+  .indra-home-content {
+
+    width: 52%;
+
+  }
+
+  .indra-home-content h1 {
+
+    font-size: 53px;
+
+  }
+
+  .indra-home-earth {
+
+    width: 70vw;
+
+    right: -150px;
+
+  }
+
+  .indra-live-card {
+
+    width: 175px;
+
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .indra-home-hero {
+
+    height: 740px;
+
+  }
+
+  .indra-home-content {
+
+    position: relative;
+
+    left: auto;
+
+    top: auto;
+
+    transform: none;
+
+    width: 100%;
+
+    padding: 45px 22px 0;
+
+  }
+
+  .indra-home-buttons {
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+  }
+
+  .indra-home-primary,
+  .indra-home-secondary {
+
+    width: 100%;
+
+  }
+
+  .indra-home-earth {
+
+    top: 365px;
+
+    right: -30%;
+
+    width: 125%;
+
+    height: 380px;
+
+  }
+
+  .indra-live-card {
+
+    width: 165px;
+
+  }
+
+  .indra-live-landslide {
+
+    display: none;
+
+  }
+
+  .indra-live-flood {
+
+    top: 51%;
+
+    left: 45%;
+
+  }
+
+  .indra-live-rain {
+
+    top: 69%;
+
+    left: 24%;
+
+  }
+
+}
